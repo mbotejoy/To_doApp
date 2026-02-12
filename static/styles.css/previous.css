@@ -1,0 +1,76 @@
+/* Container styling */
+.list-container {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #117a8b;;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+table button:first-child:hover {
+    background-color: #1e7e34;
+}
+
+table button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+table button:last-child:hover {
+    background-color: #a71d2a;
+}
+
+/* Back button styling */
+.back-btn-container {
+    margin-top: 20px;
+}
+
+#backHomeBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #117a8b;;
+    color: white;
+    cursor: pointer;
+}
+
+#backHomeBtn:hover {
+    background-color: #6396cd;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="/static/styles.css/index.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>TO-DO List</h1>
+    </nav>
+
+    <!-- AUTH BUTTONS -->
+    <div class="auth-buttons">
+        <button>Login</button>
+        <button>Sign Up</button>
+    </div>
+
+    <!-- LANDING SECTION -->
+    <section class="landing">
+
+        <a href="create.html">
+         <button class="card-btn" id="createPageBtn">Create New List
+        </button>
+        </a>
+
+        <button class="card-btn" id="templatePageBtn">
+            View Templates
+        </button>
+
+        <button class="card-btn" id="previousPageBtn">
+            Previous Lists
+        </button>
+
+    </section>
+
+    <!-- LIST SECTION -->
+    <section id="listSection" class="hidden">
+
+        <h2 id="listTitle"></h2>
+
+        <div class="task-input">
+            <input type="text" id="newTaskInput" placeholder="Add new task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <ul id="taskItems"></ul>
+
+        <button id="deleteListBtn" class="delete-list">
+            Delete Entire List
+        </button>
+
+    </section>
+
+    <script src="/static/scripts.js/index.js"></script>
+
+    <footer>
+    <p>&copy; 2024 TO-DO List App. All rights reserved.</p>
+</footer>
+</body>
+
+
+
+</html>
