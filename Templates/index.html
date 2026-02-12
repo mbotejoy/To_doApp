@@ -9,14 +9,17 @@
 
     <!-- NAVBAR -->
     <nav>
-        <h1>TO-DO List</h1>
+        <h1 class="logo-cursive">TO-DO List</h1>
+        <div class="nav-auth-buttons">
+            <a href="login.html"><button id="loginBtn">Login</button></a>
+            <a href="signup.html"><button id="signupBtn">Sign Up</button></a>
+        </div>
     </nav>
 
+    <p class="cursive-text welcome-highlight"> Welcome to your personal productivity space! Plan, track, and achieve your goals with ease. :) </p>
+
+
     <!-- AUTH BUTTONS -->
-    <div class="auth-buttons">
-        <button>Login</button>
-        <button>Sign Up</button>
-    </div>
 
     <!-- LANDING SECTION -->
     <section class="landing">
@@ -27,8 +30,23 @@
         </a>
 
         <button class="card-btn" id="templatePageBtn">
-            View Templates
+            Productivity Challenges
         </button>
+
+        <!-- Productivity Challenges Modal -->
+        <div id="challengesModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-modal" id="closeChallenges">&times;</span>
+                <h2>Productivity Challenges</h2>
+                <ul id="challengesList">
+                    <li>Complete 3 tasks today</li>
+                    <li>Plan your week every Monday</li>
+                    <li>Finish a task before noon</li>
+                    <li>Review your progress at the end of the day</li>
+                    <li>Try a new productivity technique</li>
+                </ul>
+            </div>
+        </div>
 
         <button class="card-btn" id="previousPageBtn">
             Previous Lists

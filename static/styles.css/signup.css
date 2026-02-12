@@ -1,0 +1,111 @@
+/* FORM CONTAINER */
+.form-container {
+    max-width: 480px;
+    min-width: 260px;
+    width: 96%;
+    margin: 36px auto;
+    background-color: white;
+    padding: 22px 16px 24px 16px;
+    border-radius: 9px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+}
+
+/* LABELS */
+.form-container label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    text-align: left;
+    width: 95%;
+    max-width: 420px;
+}
+
+/* INPUT FIELDS */
+/* Unified input styles for all fields */
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[name="name"],
+.form-container input[name="username"],
+.form-container input[name="confirmPassword"] {
+    width: 95%;
+    max-width: 420px;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    border: 1.5px solid #bdbdbd;
+    font-size: 1.08rem;
+    background: #f7f7f7;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+/* INPUT FOCUS EFFECT */
+/* Unified input focus styles */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[name="name"]:focus,
+.form-container input[name="username"]:focus,
+.form-container input[name="confirmPassword"]:focus {
+    border-color: #17a2b8;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(23,162,184,0.25);
+}
+
+/* BUTTONS CONTAINER */
+.button-group {
+    width: 95%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* LOGIN BUTTON */
+#signupBtn {
+    margin-top: 20px;
+    padding: 12px 32px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(40,167,69,0.08);
+    
+}
+
+#signupBtn:hover {
+    background-color: #1e7e34;
+}
+
+/* CANCEL BUTTON */
+#cancelBtn {
+    margin-top: 20px;
+    padding: 12px 32px;
+    background-color: #213a27;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(35, 67, 43, 0.08);
+    transition: background 0.3s, box-shadow 0.2s;
+}
+
+#cancelBtn:hover {
+    background-color: #536056;
+}
