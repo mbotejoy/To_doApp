@@ -1,0 +1,24 @@
+{
+  "name": "To Do App",
+  "short_name": "To Do",
+  "id": "/index.html",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#232711",
+
+  "icons": [
+    {
+      "src": "/static/Icons/icon-192.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/Icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+
+}
