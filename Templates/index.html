@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="../static/styles.css/index.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1 class="logo-cursive">TO-DO List</h1>
+        <div class="nav-auth-buttons">
+            <span id="userWelcome"></span>
+            <a href="login.html"><button id="loginBtn">Login</button></a>
+            <a href="signup.html"><button id="signupBtn">Sign Up</button></a>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+    <p class="cursive-text welcome-highlight"> Welcome to your personal productivity space! Plan, track, and achieve your goals with ease. :) </p>
+
+
+    <!-- AUTH BUTTONS -->
+
+    <!-- LANDING SECTION -->
+    <section class="landing">
+
+        <a href="create.html">
+         <button class="card-btn" id="createPageBtn">Create New List
+        </button>
+        </a>
+
+        <button class="card-btn" id="templatePageBtn">
+            Productivity Challenges
+        </button>
+
+        <!-- Productivity Challenges Modal -->
+        <div id="challengesModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-modal" id="closeChallenges">&times;</span>
+                <h2>Productivity Challenges</h2>
+                <ul id="challengesList">
+                    <li>Complete 3 tasks today</li>
+                    <li>Plan your week every Monday</li>
+                    <li>Finish a task before noon</li>
+                    <li>Review your progress at the end of the day</li>
+                    <li>Try a new productivity technique</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="card-btn" id="previousPageBtn">
+            View Lists
+        </button>
+
+    </section>
+
+    <!-- LIST SECTION -->
+    <section id="listSection" class="hidden">
+
+        <h2 id="listTitle"></h2>
+
+        <div class="task-input">
+            <input type="text" id="newTaskInput" placeholder="Add new task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <ul id="taskItems"></ul>
+
+        <button id="deleteListBtn" class="delete-list">
+            Delete Entire List
+        </button>
+
+    </section>
+
+    <script src="../static/scripts.js/index.js"></script>
+
+
+    <footer>
+    <p>&copy; 2026 TO-DO List App. All rights reserved.</p>
+</footer>
+</body>
+
+
+
+</html>

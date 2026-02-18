@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css/signup.css">
+    <link rel="stylesheet" href="../static/styles.css/index.css">
+    <title>Sign Up</title>
+</head>
+<body>
+        <!-- NAVBAR -->
+    <nav>
+        <h1>TO-DO List</h1>
+    </nav>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Username:</label>
+            <input type="text" id="username" required>
+
+            <label>Password:</label>
+            <input type="password" id="password" required>
+
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <button type="submit" id="signupBtn">Sign Up</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+        </form>
+                <script src="../static/scripts.js/db.js"></script>
+                <script src="../static/scripts.js/signup.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css/create.css">
+    <link rel="stylesheet" href="../static/styles.css/index.css">
+    <title>Create a New List</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <h1 class="logo-cursive">TO-DO List</h1>
+    </nav>
+
+    <div class="form-container">
+        <h2>Create New List</h2>
+        <form id="createListForm">
+            <!-- List Name -->
+            <label for="listName">List Name:</label>
+            <input type="text" id="listName" placeholder="Enter list name" required>
+
+            <!-- Date -->
+            <label for="listDate">Date:</label>
+            <input type="date" id="listDate">
+
+            <!-- List Items -->
+            <label for="listItemInput">Add Item:</label>
+            <div class="add-item-container">
+                <input type="text" id="listItemInput" placeholder="Enter item">
+            </div>
+            <div class="add-item-container">
+                <button type="button" id="addItemBtn">Add Item</button>
+            </div>
+
+            <!-- List of items -->
+            <ul id="listItems"></ul>
+
+            <!-- Submit Form -->
+            <button type="submit" id="saveListBtn" disabled>Save List</button>
+            <!-- Back to Home -->
+            <a href="index.html">
+                <button type="button" id="backHomeBtn">Cancel</button>
+ 
+        </form>
+    </div>
+
+<script src="/static/scripts.js/create.js"></script>
+    
+</body>
+</html>

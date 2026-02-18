@@ -1,0 +1,109 @@
+/* Reminder text style */
+.reminder-text {
+    color: #007bff;
+    font-size: 0.95em;
+    margin-left: 8px;
+}
+/* ===== LIST CONTAINER ===== */
+.list-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ===== TASK ITEMS ===== */
+.task-item {
+    list-style: none;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.task-checkbox {
+    margin-right: 15px;
+    transform: scale(1.2);
+}
+
+.task-text {
+    flex: 1;
+}
+
+/* ===== GENERAL BUTTON ===== */
+.btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+/* Hover */
+.btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Specific Buttons */
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.previous-btn {
+    background-color: #117a8b;
+    color: white;
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+#addItemBtn {
+    background-color: #117a8b;
+    color: white;
+}
+
+#deleteListBtn {
+    background-color: #dc3545;
+    color: white;
+}
+#deleteListBtn:hover {
+    background-color: rgb(177, 49, 49);
+}
+#newTaskInput {
+    width: 70%;          
+    padding: 10px;       /* makes it taller */
+    font-size: 16px;     
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+/* Focus state for input */
+#newTaskInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.4);
+}
+.task-item {
+    list-style: none;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+/* Focus state for task items */
+.task-item:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.4);
+    outline: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css/index.css">
+    <link rel="stylesheet" href="../static/styles.css/previous.css">
+    <title>Previous Lists</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <h1 class="logo-cursive">TO-DO List</h1>
+    </nav>
+
+    <div class="previous-container">
+        <h2>Your Lists</h2>
+        <div class="table-container">
+            <table id="previousListsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Lists will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+                <div class="back-btn-container">
+                    <button id="backHomeBtn">Back to Home</button>
+                </div>
+    </div>
+
+    <script>
+    // Restrict access to previous lists if not logged in
+    if (!localStorage.getItem("username")) {
+        alert("You must be logged in to view previous lists.");
+        window.location.href = "login.html";
+    }
+    </script>
+    <script src="../static/scripts.js/previous.js"></script>
+        <script>
+        // Back to Home button navigation
+        document.addEventListener("DOMContentLoaded", function() {
+            const backHomeBtn = document.getElementById("backHomeBtn");
+            if (backHomeBtn) {
+                backHomeBtn.addEventListener("click", function() {
+                    window.location.href = "index.html";
+                });
+            }
+        });
+        </script>
+
+</body>
+
+</html>
